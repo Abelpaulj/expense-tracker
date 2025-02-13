@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles/home.css">
+  <link rel="stylesheet" href="styles/seeall.css">
+  <link rel="stylesheet" href="styles/budget.css">
+ 
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+  <title>Document</title>
+</head>
+<body>
+  <body>
+    <nav>
+      <a href="home.html">Home</a>
+    <a href="insights.html">Insights</a>
+    </nav>
+
+    
+  
+    <Section class="home-page-container">
+      <section class="home-adjust">
+        <div class="heading">
+        <h1>Insights</h1>
+      </div>
+      <div class="month-head">
+        <h2>January</h2>
+      </div>
+
+      
+      <div class="month-budget">
+       <P>Monthly Budget</P> 
+       <a href="monthlybudjet.html" class="month-budget-link">
+       <div class="month-items">
+        
+        <!-- Circular Progress Bar -->
+        <div class="progress-circle">
+          <svg viewBox="0 0 36 36" class="circular-chart">
+            <!-- Background Circle (Empty) -->
+            <path class="circle-bg"
+              d="M18 2.0845
+                 a 15.9155 15.9155 0 0 1 0 31.831
+                 a 15.9155 15.9155 0 0 1 0 -31.831"
+            />
+            <!-- Progress Circle (Filled) -->
+            <path class="circle"
+              stroke-dasharray="0, 100"
+              d="M18 2.0845
+                 a 15.9155 15.9155 0 0 1 0 31.831
+                 a 15.9155 15.9155 0 0 1 0 -31.831"
+            />
+            <!-- Image Inside the Circle -->
+            <image x="5" y="4.9" width="26" height="26" xlink:href="img/pie-chart.png" />
+          </svg>
+        
+      </div>
+        <div class="budget-left">
+       <P class="euro-left">&euro; left</P>
+       <p class="days-left">26 days to go</p>
+      </div>
+       </div>
+      </a>
+      </div>
+    
+
+      <section class ='Overview'>
+        <div class="Overview-items"> 
+          <p class="head-over">Balance Overview</p>
+          <div class="Details"><P></P></div>
+          
+        </div>
+
+        <div class="Expense-box">
+          <div class="box-items">
+            <p class="Expenses">Expenses</p>
+            <P class="euro-left">- &euro;113</P>
+          </div>
+          <div class="pie-chart">
+           <canvas id="budgetPieChart"></canvas>
+          </div>
+          <p class="Category-p">CATEGORY BREAKDOWN</p>
+          <a href="type.html" style="text-decoration: none; color: inherit;">
+          <div class="Breakdown">
+            <div class="breakdown-things">
+            
+            <img src="img/food.png" alt="">
+            <p class="type">Food</p>
+          
+            <p class="euro-break">-&euro;36,55</p>
+          </div>
+        </div>
+        </a>
+
+          
+
+        </div>
+
+
+      </section>
+
+
+
+
+
+
+
+
+
+
+
+
+      </section>
+    </Section>
+
+
+
+
+    <script type="module" src="classes/insights.js"></script>
+    
+    
+</body>
+</html>

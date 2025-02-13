@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles/home.css">
+  <link rel="stylesheet" href="styles/monthlybudget.css">
+  <link rel="stylesheet" href="styles/seeall.css">
+  <link rel="stylesheet" href="styles/type.css">
+  
+  <title>Document</title>
+</head>
+<body>
+  <nav>
+    <a href="home.html">Home</a>
+    <a href="insights.html">Insights</a>
+  </nav>
+
+  <Section class="home-page-container">
+    <section class="home-adjust">
+      <section><H2>What's the maximum you want to spend each month?</H2></section>
+      <section class="max-class">
+        <section class="max-heading">
+          <h1>Amount</h1>
+          <div class="euro-input">
+            <span class="euro-symbol">€</span>
+            <input type="number" step="0.01" placeholder="0.00">
+          </div>
+          </section>
+          <section class="budget-items">
+            <section class="budget-not">
+            <img src="img/search.png" alt="">
+            <section class="budget-text">
+             <p class="text-head">Weekly budgeting updates</p>
+             <p class="text-down">Push notifications with updates on your progress</p>
+            </section>
+            </section>
+            <label class="switch">
+             <input type="checkbox" checked>
+              <span class="slider"></span>
+            </label>
+          </section>
+        </section>
+
+        <section>
+          <button class="budget-btn">Save changes</button>
+          <button class="budget-delete">Delete monthly budget</button>
+        </section>
+
+
+
+
+      </section>
+
+
+
+
+
+
+
+    </section>
+  </Section>
+  <script type="module" src="classes/adjustbudget.js"></script>
+</body>
+</html>

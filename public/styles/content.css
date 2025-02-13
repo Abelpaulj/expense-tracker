@@ -1,0 +1,45 @@
+.content-details{
+  background-color: white;
+  border: 1px solid;
+  border-color: rgb(220, 219, 219);
+  
+  padding: 30px;
+  border-radius: 8px;
+}
+#categorycontentdown{
+  background-color: rgba(203, 213, 213, 0.184);
+  border-radius: 5px ;
+  padding:12px 20px; 
+  font-size: 15px;
+  border: none;
+  outline-color:rgb(72, 172, 152); 
+  width: 100%;
+}
+
+.content-Description{
+  display: flex;
+  flex-direction: column;
+
+}
+.Description-para{
+  font-size: 15px;
+  background-color: rgba(203, 213, 213, 0.184);
+  padding: 15px;
+  margin-bottom: 0px;
+
+} 
+
+
+.content-head{
+  font-size: 17px;
+  margin-bottom: 0px;
+
+}
+.euro-spent{
+  font-size: 23px;
+  font-weight: little bold;
+}
+.content-category{
+  font-size: 25px;
+
+}

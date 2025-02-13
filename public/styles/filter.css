@@ -1,0 +1,103 @@
+/* Filter Panel (Initially Hidden) */
+.filter-panel {
+  position: fixed;
+  top: 0;
+  right: -100%; /* Start Off-Screen */
+  width: 500px;
+  height: 100vh;
+  background-color: white;
+  z-index: 1;
+  color: black;
+  transition: right 0.4s ease-in-out; /* Smooth Slide-In */
+  box-shadow: -2px 0 10px rgba(0, 0, 0, 0.2);
+  z-index: 1000;
+  padding: 20px;
+}
+
+/* Open State (Slide In) */
+.filter-panel.open {
+  right: 0; /* Fully Visible */
+}
+
+/* Close Button */
+.close-filter {
+  background: none;
+  border: none;
+  color: rgb(17, 16, 16);
+  font-size: 27px;
+  cursor: pointer;
+  align-self: flex-end;
+  margin-right: 20px;
+
+}
+
+/* Filter Content */
+.filter-content {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.filter-content h2 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.filter-content select, 
+.filter-content input {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 10px;
+}
+
+.apply-filter {
+  height: 56px;
+ 
+  border-radius: 5px;
+  border-style: none;
+  color: white;
+  background-color: rgb(72, 172, 152); 
+  cursor: pointer;
+  font-size: 16px;
+  margin-top: 10px;
+}
+
+.apply-filter:hover {
+  opacity: 0.9;
+}
+.input-section{
+  display: flex;
+  flex-direction: row;
+  
+  justify-content: space-around;
+
+}
+.input-section input{
+  padding:10px;
+  border-radius: 10px;
+  width: 40%;
+}
+
+.selected-categories {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 10px;
+}
+
+.category-tag {
+  background-color: #d1ecf1;
+  color: #0c5460;
+  padding: 5px 10px;
+  border-radius: 15px;
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+}
+
+.remove-category {
+  margin-left: 8px;
+  cursor: pointer;
+  font-weight: bold;
+  color: #721c24;
+}

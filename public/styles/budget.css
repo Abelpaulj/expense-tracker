@@ -1,0 +1,184 @@
+
+
+.heading h1{
+  font-size: 30px;
+  font-weight:500;
+}
+.month-head h2{
+  margin: 0px;
+  font-size: 35px;
+  font-weight: 600;
+}
+.month-items img{
+  height:25px;
+  width: 25px;
+  margin-left: 12px;
+
+}
+.budget-left{
+  margin-left: 20px;
+}
+.budget-left p{
+  margin: 0px;
+}
+.euro-left{
+  font-size: 15px;
+  font-weight: bold;
+}
+.days-left{
+  font-size: 12px;
+  color: rgba(92, 92, 92, 0.601);
+}
+.month-budget-link {
+  text-decoration: none; /* Removes underline from link */
+  color: inherit; /* Inherits text color */
+  display: block; /* Makes the link behave like a block element */
+  cursor: pointer;
+}
+.month-items{
+  
+  background-color: white;
+  border: 0.3px solid rgba(206, 205, 205, 0.646);
+  border-radius: 5px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 15px;
+  background-image: url('public/img/next.png'); 
+  background-size: 25px 25px;
+  background-position: 95% center; 
+  background-repeat: no-repeat;
+  
+}
+
+
+
+.Overview-items{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  
+}
+.head-over{
+  font-size: 20px;
+
+}
+.Details{
+  font-size: 16px;
+  color:rgb(72, 172, 152);
+  padding: 5px;
+  text-decoration: underline;
+
+}
+
+.Expense-box{
+  background-color: white;
+  border: 0.3px solid rgba(206, 205, 205, 0.646);
+  border-radius: 5px;
+  padding: 15px;
+  margin-bottom: 20px;
+}
+.box-items p{
+  margin: 0px;
+  margin-top: 5px;
+
+}
+.Expenses{
+  font-size: 17px;
+  color: rgba(92, 92, 92, 0.601);
+}
+.Category-p{
+  font-size: 13px;
+  font-weight: bold;
+  color: rgba(92, 92, 92, 0.601);
+}
+.Breakdown{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  
+  padding: 10px;
+  border: 0.3px solid rgba(206, 205, 205, 0.646);
+  border-radius: 5px;
+  background-image: url("img/next.png"); 
+  background-size: 25px 25px;
+  background-position: 99% center; 
+  background-repeat: no-repeat;
+  
+
+}
+.breakdown-things{
+  display: flex;
+  flex-direction:row;
+  justify-content: space-;
+  width: 97%;
+  align-items: center;
+  margin-top: 5px;
+  padding: 10px;
+  background-color: rgba(114, 167, 195, 0.383);
+  border: 0.3px ;
+  border-radius: 5px;
+  
+  
+
+}
+
+.Breakdown img{
+  height: 30px;
+  width:30px;
+}
+.Breakdown-items{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  width: 12%;
+  font-weight:bold ;
+  background-color: rgba(114, 167, 195, 0.383);
+}
+.type{
+  margin: 0px;
+  margin-left: 7px;
+}
+.euro-break{
+  position: absolute;
+  margin: 0px;
+  margin-left: 65%;
+  align-items: center;
+}
+
+
+/*loading */
+.progress-circle {
+  width: 60px;
+  height: 60px;
+  margin-right: 10px;
+}
+
+.circular-chart {
+  display: block;
+  margin: 0 auto;
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.circle-bg {
+  fill: none;
+  stroke: #e0e0e0; /* Background color of the circle (empty portion) */
+  stroke-width: 2.5;
+}
+
+.circle {
+  fill: none;
+  stroke:rgb(72, 172, 152); /* Color of the progress bar (filled portion) */
+  stroke-width: 2.5;
+  stroke-linecap: round;
+  transition: stroke-dasharray 0.5s ease-in-out;
+}
+
+.percentage {
+  fill: #000; /* Color of the percentage text */
+  font-size: 0.5em;
+  text-anchor: middle;
+}
