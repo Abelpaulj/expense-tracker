@@ -1,6 +1,6 @@
 import { Task } from "./list.js";
 
-// ✅ SEARCH FUNCTIONALITY
+//  SEARCH FUNCTIONALITY
 export function setupSearch() {
   const searchInput = document.querySelector<HTMLInputElement>(".search-items input");
   const searchButton = document.querySelector<HTMLButtonElement>(".search-button");
@@ -18,11 +18,11 @@ export function setupSearch() {
       return;
     }
 
-    // ✅ Get transactions from LocalStorage
+    // Get transactions from LocalStorage
     const tasksJSON = localStorage.getItem("tasks");
     const tasks: Task[] = tasksJSON ? JSON.parse(tasksJSON) : [];
 
-    // ✅ Convert `task.amount` to a string before calling `toLowerCase()`
+    //  Convert `task.amount` to a string before calling `toLowerCase()`
     const filteredTasks = tasks.filter((task) =>
       task.category.toLowerCase().includes(query) ||
       (typeof task.description === "string" && task.description.toLowerCase().includes(query)) ||
@@ -34,15 +34,15 @@ export function setupSearch() {
       return;
     }
 
-    // ✅ Store filtered results in LocalStorage
+    //  Store filtered results in LocalStorage
     localStorage.setItem("searchResults", JSON.stringify(filteredTasks));
 
-    // ✅ Redirect to "See All" page
+    //  Redirect to "See All" page
     window.location.href = "seeall.html?search=true";
   });
 }
 
-// ✅ FILTER PANEL FUNCTIONALITY
+// FILTER PANEL FUNCTIONALITY
 export function setupFilterPanel() {
   const filterPanel = document.querySelector(".filter-panel");
   const filterButton = document.querySelector(".filter-button");
@@ -73,6 +73,7 @@ export function setupFilterPanel() {
 export function setupCategorySelection() {
   const categoryDropdown = document.querySelector(".category-dropdown") as HTMLSelectElement;
   const selectedCategoriesContainer = document.getElementById("selectedCategoriesContainer") as HTMLElement;
+  
 
   if (!categoryDropdown || !selectedCategoriesContainer) {
     console.error("Category elements not found.");
@@ -175,10 +176,10 @@ export function setupApplyFilter() {
       return;
     }
 
-    // ✅ Save filtered results to LocalStorage
+    //  Save filtered results to LocalStorage
     localStorage.setItem("filteredResults", JSON.stringify(filteredTasks));
 
-    // ✅ Redirect to See All Page with filter query
+    //  Redirect to See All Page with filter query
     window.location.href = "seeall.html?filtered=true";
   });
 }

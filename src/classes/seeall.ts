@@ -65,7 +65,7 @@ export function renderTransactions(tasks: Task[], isFiltered: boolean = false): 
 
 
 // Load transactions when DOM is ready
-// ✅ Load transactions when DOM is ready
+
 document.addEventListener("DOMContentLoaded", () => {
   console.log("✅ DOM Loaded. Initializing See All Page.");
 

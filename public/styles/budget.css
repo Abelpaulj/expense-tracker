@@ -178,7 +178,7 @@
 }
 
 .percentage {
-  fill: #000; /* Color of the percentage text */
+  fill: white; /* Color of the percentage text */
   font-size: 0.5em;
   text-anchor: middle;
 }

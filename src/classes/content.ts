@@ -38,8 +38,8 @@ function displayExpenseDetails(): void {
   // Convert saved timestamp to a Date object
   const expenseDate = new Date(selectedTask.task_createdAt);
 
-  // ✅ Format Date in German (Without Time)
-  const formattedDate = expenseDate.toLocaleDateString("de-DE", {
+  //  Format Date in German (Without Time)
+  const formattedDate = expenseDate.toLocaleDateString("en-US", {
     weekday: "long", // e.g., Montag, Dienstag
     day: "numeric",
     month: "long", // e.g., Januar, Februar

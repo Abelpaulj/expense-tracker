@@ -2,6 +2,7 @@ import { loadTasksFromLocalStorage, saveTasksToLocalStorage } from "../index.js"
 import { Task } from "./list.js";
 import { renderPieChart } from "./chart.js";
 
+
 // Function to calculate remaining budget for the current month
 export function calculateRemainingBudget(budgetKey: string): number {
   const budget = parseFloat(localStorage.getItem(budgetKey) || "0");
@@ -31,7 +32,7 @@ export function sendBudgetNotification(remainingBudget: number, totalBudget: num
   }
 }
 
-// Function to update the budget display in the HTML
+// update the budget display in the HTML
 export function updateBudgetDisplay(): void {
   const remainingBudget = calculateRemainingBudget("monthlyBudget");
   const euroLeftElements = document.querySelectorAll<HTMLParagraphElement>(".euro-left");
@@ -197,9 +198,7 @@ function updateDaysLeft() {
 
 
 
-//loading
-
-
+//loading ,took it from internet and modified
 
 function updateBudgetProgress() {
   const budget = parseFloat(localStorage.getItem("monthlyBudget") || "0");
@@ -229,7 +228,7 @@ function updateBudgetProgress() {
 
     // Set the stroke-dasharray to show only the spent portion
     circle.style.strokeDasharray = `${circumference * (percentageSpent / 100)}, ${circumference}`;
-    percentageText.textContent = `${Math.round(percentageSpent)}%`;
+    //percentageText.textContent = `${Math.round(percentageSpent)}%`;
   }
 }
 
